@@ -1,0 +1,3086 @@
+{
+  "1560678850445447238": {
+    "1514280996068134912": {
+      "wallet": 0,
+      "bank": 2090,
+      "dailyAt": 1792215726753,
+      "weeklyAt": 1792216928673,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792246972703,
+      "robAt": 1792228623538,
+      "history": [
+        {
+          "text": "Deposit: 490",
+          "at": 1792246988647
+        },
+        {
+          "text": "Crime failed: -106",
+          "at": 1792246972703
+        },
+        {
+          "text": "Crime success: +260",
+          "at": 1792231887226
+        },
+        {
+          "text": "Paid shourya108: 100",
+          "at": 1792228695987
+        },
+        {
+          "text": "Robbed shourya108: +56",
+          "at": 1792228623538
+        },
+        {
+          "text": "Crime failed: -62",
+          "at": 1792228573099
+        },
+        {
+          "text": "Paid ibn_swaleh: 200",
+          "at": 1792223967295
+        },
+        {
+          "text": "Robbed ibn_swaleh: +77",
+          "at": 1792223918870
+        },
+        {
+          "text": "Crime success: +390",
+          "at": 1792223774087
+        },
+        {
+          "text": "Robbed itz_r007: +36",
+          "at": 1792217005421
+        },
+        {
+          "text": "Crime failed: -198",
+          "at": 1792216992823
+        },
+        {
+          "text": "Paid itz_r007: 200",
+          "at": 1792216980701
+        },
+        {
+          "text": "Withdraw: 400",
+          "at": 1792216964631
+        },
+        {
+          "text": "Deposit: 2000",
+          "at": 1792216947621
+        },
+        {
+          "text": "Weekly reward: +1875",
+          "at": 1792216928677
+        },
+        {
+          "text": "Withdraw: 262",
+          "at": 1792215895218
+        },
+        {
+          "text": "Deposit: 262",
+          "at": 1792215887659
+        },
+        {
+          "text": "Daily reward: +262",
+          "at": 1792215726761
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": {
+        "job": "Yapper",
+        "goalMinutes": 15,
+        "progressMs": 0,
+        "startedAt": 1792217129659
+      },
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "_config": {
+      "workChannelId": "",
+      "messageGoal": 20,
+      "shopPrices": {
+        "work_kit": 5000,
+        "lucky_charm": 2500,
+        "xp_scroll": 1500,
+        "premium": 10000,
+        "buddies": 5000,
+        "no_prefix_pass": 5000000
+      },
+      "maxGameBet": 100000,
+      "slotJackpotMultiplier": 10,
+      "rouletteGame": null,
+      "botChannelId": "",
+      "botChannelIds": [],
+      "bakeryPrices": {},
+      "bakeryMarket": {
+        "updatedAt": 1792396122140,
+        "values": {
+          "cookie": 50,
+          "chocolate": 100,
+          "cake": 250,
+          "brownie": 120,
+          "pastries": 80,
+          "puffs": 40,
+          "sweet_rolls": 70,
+          "donuts": 60
+        }
+      },
+      "pendingTrades": {}
+    },
+    "1549814401597579350": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 1792231694308,
+      "history": [
+        {
+          "text": "Robbery failed: -164",
+          "at": 1792231694308
+        },
+        {
+          "text": "Robbed by akshatkrofficial_47531: -36",
+          "at": 1792217005421
+        },
+        {
+          "text": "Received from akshatkrofficial_47531: 200",
+          "at": 1792216980701
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1500100361636155503": {
+      "wallet": 370,
+      "bank": 99,
+      "dailyAt": 1792223669419,
+      "weeklyAt": 0,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792223843742,
+      "robAt": 1792223949023,
+      "history": [
+        {
+          "text": "Received from akshatkrofficial_47531: 200",
+          "at": 1792223967295
+        },
+        {
+          "text": "Robbery failed: -208",
+          "at": 1792223949023
+        },
+        {
+          "text": "Robbed by akshatkrofficial_47531: -77",
+          "at": 1792223918870
+        },
+        {
+          "text": "Withdraw: 1",
+          "at": 1792223903373
+        },
+        {
+          "text": "Deposit: 100",
+          "at": 1792223863034
+        },
+        {
+          "text": "Crime success: +258",
+          "at": 1792223843742
+        },
+        {
+          "text": "Daily reward: +296",
+          "at": 1792223669419
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1317430772650606603": {
+      "wallet": 100,
+      "bank": 559,
+      "dailyAt": 1792228575538,
+      "weeklyAt": 0,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792228777551,
+      "robAt": 1792228693158,
+      "history": [
+        {
+          "text": "Deposit: 333",
+          "at": 1792228790541
+        },
+        {
+          "text": "Crime success: +333",
+          "at": 1792228777551
+        },
+        {
+          "text": "Received from akshatkrofficial_47531: 100",
+          "at": 1792228695987
+        },
+        {
+          "text": "Robbery failed: -0",
+          "at": 1792228693158
+        },
+        {
+          "text": "Deposit: 226",
+          "at": 1792228685722
+        },
+        {
+          "text": "Robbed by akshatkrofficial_47531: -56",
+          "at": 1792228623538
+        },
+        {
+          "text": "Daily reward: +282",
+          "at": 1792228575583
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1517847794319229101": {
+      "wallet": 63,
+      "bank": 2300,
+      "dailyAt": 1792247132762,
+      "weeklyAt": 1792247143006,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792247126441,
+      "robAt": 0,
+      "history": [
+        {
+          "text": "Deposit: 2300",
+          "at": 1792247193625
+        },
+        {
+          "text": "Weekly reward: +1864",
+          "at": 1792247143006
+        },
+        {
+          "text": "Daily reward: +323",
+          "at": 1792247132763
+        },
+        {
+          "text": "Crime success: +176",
+          "at": 1792247126441
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    }
+  },
+  "1548767484776030208": {
+    "1514280996068134912": {
+      "wallet": 110211122435089,
+      "bank": 0,
+      "dailyAt": 1792333462842,
+      "weeklyAt": 1792333471763,
+      "streak": 1,
+      "lastDailyDate": "2026-10-18",
+      "job": "Messages Grinder",
+      "jobChangedAt": 1792314337047,
+      "workAt": 0,
+      "crimeAt": 1792317725550,
+      "robAt": 1792388194693,
+      "history": [
+        {
+          "text": "Bakery purchase Donuts: -150",
+          "at": 1792465510770
+        },
+        {
+          "text": "Bakery purchase Sweet Rolls: -150",
+          "at": 1792465508335
+        },
+        {
+          "text": "Bakery purchase Sweet Rolls: -150",
+          "at": 1792465505458
+        },
+        {
+          "text": "Bakery purchase Puffs: -100",
+          "at": 1792465501063
+        },
+        {
+          "text": "Bakery purchase Chocolate: -200",
+          "at": 1792408466253
+        },
+        {
+          "text": "Withdraw: 110211122435839",
+          "at": 1792408463248
+        },
+        {
+          "text": "Robbery failed: -100",
+          "at": 1792388194693
+        },
+        {
+          "text": "Expired Skelly Roulette lobby refund: +100",
+          "at": 1792387976006
+        },
+        {
+          "text": "Deposit: 110211122435839",
+          "at": 1792385078063
+        },
+        {
+          "text": "Skelly Roulette stake: -100",
+          "at": 1792385052391
+        },
+        {
+          "text": "Withdraw: 110211122435939",
+          "at": 1792385042957
+        },
+        {
+          "text": "Deposit: 110211122435939",
+          "at": 1792376515298
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +100000000000000 Chocochips",
+          "at": 1792376500296
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +10000000000000 Chocochips",
+          "at": 1792376471685
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +100000000000 Chocochips",
+          "at": 1792376452581
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +100000000000 Chocochips",
+          "at": 1792376413555
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +10000000000 Chocochips",
+          "at": 1792376394556
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +1000000000 Chocochips",
+          "at": 1792376374074
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +100000000 Chocochips",
+          "at": 1792336089793
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +10000000 Chocochips",
+          "at": 1792336072402
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": true,
+        "buddies": false,
+        "no_prefix_pass": true
+      },
+      "activeMineGame": null,
+      "shopSession": "92a1e4effeb44537",
+      "gameCooldowns": {
+        "cfAt": 1792318125402,
+        "slotAt": 1792303715861,
+        "mineAt": 0,
+        "rouletteAt": 1792385052391
+      },
+      "bakeryInventory": {
+        "chocolate": 0,
+        "puffs": 0,
+        "sweet_rolls": 2,
+        "donuts": 1
+      },
+      "bakerySession": "10d73ce9eb9e4468",
+      "browniePet": {
+        "name": "Genius Chocolate",
+        "level": 1,
+        "xp": 10,
+        "happiness": 75,
+        "hunger": 100,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 1792465526772
+      }
+    },
+    "1523707147915890769": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "_config": {
+      "workChannelId": "1548773973763031110",
+      "messageGoal": 50,
+      "shopPrices": {
+        "work_kit": 5000,
+        "lucky_charm": 2500,
+        "xp_scroll": 1500,
+        "premium": 100000,
+        "buddies": 10000000,
+        "no_prefix_pass": 5000000
+      },
+      "maxGameBet": 100000,
+      "slotJackpotMultiplier": 5,
+      "rouletteGame": null,
+      "botChannelId": "",
+      "botChannelIds": [],
+      "bakeryPrices": {
+        "cookie": 100,
+        "chocolate": 200,
+        "cake": 500,
+        "brownie": 250,
+        "pastries": 200,
+        "puffs": 100,
+        "sweet_rolls": 150,
+        "donuts": 150
+      },
+      "bakeryMarket": {
+        "updatedAt": 1792396122141,
+        "values": {
+          "cookie": 50,
+          "chocolate": 100,
+          "cake": 250,
+          "brownie": 120,
+          "pastries": 80,
+          "puffs": 40,
+          "sweet_rolls": 70,
+          "donuts": 60
+        }
+      },
+      "pendingTrades": {
+        "245bbcab5c0643ea": {
+          "id": "245bbcab5c0643ea",
+          "from": "1514280996068134912",
+          "to": "1494003668033212497",
+          "amount": 0,
+          "itemId": null,
+          "itemQuantity": 0,
+          "createdAt": 1792396247334
+        }
+      }
+    },
+    "1329092208443261051": {
+      "wallet": 223,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792316928444,
+      "robAt": 0,
+      "history": [
+        {
+          "text": "Crime success: +223",
+          "at": 1792316928444
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1528066196572868679": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1201186910148763659": {
+      "wallet": 200,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [
+        {
+          "text": "Received from akshatkrofficial_47531: 200",
+          "at": 1792231521779
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1332613770593177611": {
+      "wallet": 168,
+      "bank": 52651,
+      "dailyAt": 1792231641873,
+      "weeklyAt": 1792231652056,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Messages Grinder",
+      "jobChangedAt": 1792232260582,
+      "workAt": 0,
+      "crimeAt": 1792387976186,
+      "robAt": 1792385719201,
+      "history": [
+        {
+          "text": "Crime success: +168",
+          "at": 1792387976186
+        },
+        {
+          "text": "Robbery failed: -48",
+          "at": 1792385719201
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792385630434
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792385595900
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792385551926
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792385531594
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792385521985
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792385517577
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792385495774
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792385490185
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792339019377
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792338980127
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792319367096
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792308694895
+        },
+        {
+          "text": "Shop purchase: No Prefix Pass for 5000000",
+          "at": 1792308490786
+        },
+        {
+          "text": "Withdraw: 5000000",
+          "at": 1792308474684
+        },
+        {
+          "text": "Deposit: 4000000",
+          "at": 1792308327435
+        },
+        {
+          "text": "Deposit: 1000000",
+          "at": 1792308300993
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +4000000 Chocochips",
+          "at": 1792308296467
+        },
+        {
+          "text": "Owner deduction by akshatkrofficial_47531: -40000000 Chocochips (wallet 40000000, bank 0)",
+          "at": 1792308249007
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": {
+        "job": "Messages Grinder",
+        "channelId": "1548773973763031110",
+        "goalMessages": 50,
+        "messageCount": 19,
+        "startedAt": 1792232279388
+      },
+      "lastWorkMessageId": "1561603259146309695",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": true
+      },
+      "activeMineGame": null,
+      "shopSession": "867fde50a3c14933",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "lulu",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1331691765010272328": {
+      "wallet": 14985,
+      "bank": 0,
+      "dailyAt": 1792304023503,
+      "weeklyAt": 1792297999275,
+      "streak": 1,
+      "lastDailyDate": "2026-10-18",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792305455387,
+      "robAt": 1792305411112,
+      "history": [
+        {
+          "text": "Crime success: +347",
+          "at": 1792305455388
+        },
+        {
+          "text": "Robbed akshatkrofficial_47531: +2849",
+          "at": 1792305411113
+        },
+        {
+          "text": "Received from akshatkrofficial_47531: 10000",
+          "at": 1792304116121
+        },
+        {
+          "text": "Crime failed: -69",
+          "at": 1792304074710
+        },
+        {
+          "text": "Daily reward: +347",
+          "at": 1792304023553
+        },
+        {
+          "text": "Robbery failed: -199",
+          "at": 1792298223879
+        },
+        {
+          "text": "Received from starlord_0778: 67",
+          "at": 1792298098782
+        },
+        {
+          "text": "Weekly reward: +1643",
+          "at": 1792297999276
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1494003668033212497": {
+      "wallet": 0,
+      "bank": 134802,
+      "dailyAt": 1792297922076,
+      "weeklyAt": 1792298092056,
+      "streak": 1,
+      "lastDailyDate": "2026-10-18",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792388516370,
+      "robAt": 1792317129624,
+      "history": [
+        {
+          "text": "Crime failed: -0",
+          "at": 1792388516370
+        },
+        {
+          "text": "Robbery failed: -0",
+          "at": 1792317129625
+        },
+        {
+          "text": "Paid uchiha.void: 1000",
+          "at": 1792305558065
+        },
+        {
+          "text": "Withdraw: 1000",
+          "at": 1792305548793
+        },
+        {
+          "text": "Owner deduction by akshatkrofficial_47531: -1342237 Chocochips (wallet 5000, bank 1337237)",
+          "at": 1792305462649
+        },
+        {
+          "text": "Withdraw: 5000",
+          "at": 1792305438805
+        },
+        {
+          "text": "Deposit: 1478039",
+          "at": 1792305348012
+        },
+        {
+          "text": "Mines cashout: +228000",
+          "at": 1792305323099
+        },
+        {
+          "text": "Mines stake: -100000",
+          "at": 1792305304185
+        },
+        {
+          "text": "Withdraw: 1350039",
+          "at": 1792305282785
+        },
+        {
+          "text": "Deposit: 1242237",
+          "at": 1792305084747
+        },
+        {
+          "text": "Deposit: 100000",
+          "at": 1792305059226
+        },
+        {
+          "text": "Robbed akshatkrofficial_47531: +1342237",
+          "at": 1792305011197
+        },
+        {
+          "text": "Deposit: 1035",
+          "at": 1792304827357
+        },
+        {
+          "text": "Deposit: 6767",
+          "at": 1792304796259
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +6767 Chocochips",
+          "at": 1792304735927
+        },
+        {
+          "text": "Crime failed: -161",
+          "at": 1792304709547
+        },
+        {
+          "text": "Robbed by akshatkrofficial_47531: -406",
+          "at": 1792303749794
+        },
+        {
+          "text": "Paid aizen_sosuke1093: 100",
+          "at": 1792298694331
+        },
+        {
+          "text": "Robbery failed: -73",
+          "at": 1792298251792
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": true
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 1792305304183,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1317430772650606603": {
+      "wallet": 441,
+      "bank": 0,
+      "dailyAt": 1792406781462,
+      "weeklyAt": 0,
+      "streak": 1,
+      "lastDailyDate": "2026-10-19",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [
+        {
+          "text": "Daily reward: +341",
+          "at": 1792406781491
+        },
+        {
+          "text": "Shop purchase: No Prefix Pass for 5000000",
+          "at": 1792308044964
+        },
+        {
+          "text": "Withdraw: 5000100",
+          "at": 1792308041834
+        },
+        {
+          "text": "Deposit: 5000100",
+          "at": 1792308000208
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +5000000 Chocochips",
+          "at": 1792307987514
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +100 Chocochips",
+          "at": 1792307840697
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": true
+      },
+      "activeMineGame": null,
+      "shopSession": "dd90cb04582f460d",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "13d160808fb146d3",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 15,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1335594699926405192": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1532413544069595370": {
+      "wallet": 100,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [
+        {
+          "text": "Received from starlord_0778: 100",
+          "at": 1792298694331
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1521533850516459690": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1465973521984520234": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1346503612293189743": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1538149599343018035": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1555541886075150388": {
+      "wallet": 291,
+      "bank": 2077,
+      "dailyAt": 1792334282987,
+      "weeklyAt": 1792334286306,
+      "streak": 1,
+      "lastDailyDate": "2026-10-18",
+      "job": "Messages Grinder",
+      "jobChangedAt": 1792334335707,
+      "workAt": 0,
+      "crimeAt": 1792334304711,
+      "robAt": 1792334299686,
+      "history": [
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792334346837
+        },
+        {
+          "text": "Crime success: +287",
+          "at": 1792334304711
+        },
+        {
+          "text": "Robbery failed: -0",
+          "at": 1792334299686
+        },
+        {
+          "text": "Deposit: 2077",
+          "at": 1792334294541
+        },
+        {
+          "text": "Weekly reward: +1757",
+          "at": 1792334286306
+        },
+        {
+          "text": "Daily reward: +320",
+          "at": 1792334282987
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": {
+        "job": "Messages Grinder",
+        "channelId": "1548773973763031110",
+        "goalMessages": 50,
+        "messageCount": 1,
+        "startedAt": 1792334339981
+      },
+      "lastWorkMessageId": "1561388160393678871",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": true
+      },
+      "activeMineGame": null,
+      "shopSession": "ff464e09eaa64857",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1415553803620716544": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1470861747890946048": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1555546012297330831": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      },
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      }
+    }
+  },
+  "1543654879590097047": {
+    "1514280996068134912": {
+      "wallet": 1676,
+      "bank": 2264,
+      "dailyAt": 1792222463405,
+      "weeklyAt": 1792465029564,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792245715569,
+      "robAt": 1792320957682,
+      "history": [
+        {
+          "text": "Weekly reward: +1676",
+          "at": 1792465029564
+        },
+        {
+          "text": "Robbery failed: -0",
+          "at": 1792320957682
+        },
+        {
+          "text": "Deposit: 2264",
+          "at": 1792307345051
+        },
+        {
+          "text": "Shop purchase: No Prefix Pass for 5000000",
+          "at": 1792307339633
+        },
+        {
+          "text": "Withdraw: 5000532",
+          "at": 1792307337624
+        },
+        {
+          "text": "Deposit: 5000000",
+          "at": 1792304520967
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +5000000 Chocochips",
+          "at": 1792304507275
+        },
+        {
+          "text": "Robbed by vi3ek_d9mb_xd: -463",
+          "at": 1792304385743
+        },
+        {
+          "text": "Crime success: +185",
+          "at": 1792245715570
+        },
+        {
+          "text": "Deposit: 300",
+          "at": 1792245681875
+        },
+        {
+          "text": "Weekly reward: +1913",
+          "at": 1792245629152
+        },
+        {
+          "text": "Crime success: +239",
+          "at": 1792229238123
+        },
+        {
+          "text": "Robbery failed: -162",
+          "at": 1792228232953
+        },
+        {
+          "text": "Paid cr7suiithegoat: 300",
+          "at": 1792228212069
+        },
+        {
+          "text": "Withdraw: 500",
+          "at": 1792228206186
+        },
+        {
+          "text": "Deposit: 500",
+          "at": 1792228120298
+        },
+        {
+          "text": "Deposit: 232",
+          "at": 1792228095286
+        },
+        {
+          "text": "Crime success: +233",
+          "at": 1792228088920
+        },
+        {
+          "text": "Paid cr7suiithegoat: 1",
+          "at": 1792222625798
+        },
+        {
+          "text": "Crime success: +279",
+          "at": 1792222612926
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": {
+        "job": "Yapper",
+        "goalMinutes": 15,
+        "progressMs": 0,
+        "startedAt": 1792222476697
+      },
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": true
+      },
+      "activeMineGame": null,
+      "shopSession": "1227ff8a28b84939",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 80,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1528066196572868679": {
+      "wallet": 192,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 1792321006539,
+      "history": [
+        {
+          "text": "Robbery failed: -99",
+          "at": 1792321006539
+        },
+        {
+          "text": "Ate Brownie Bot: -10",
+          "at": 1792320890737
+        },
+        {
+          "text": "Received from akshatkrofficial_47531: 300",
+          "at": 1792228212069
+        },
+        {
+          "text": "Received from akshatkrofficial_47531: 1",
+          "at": 1792222625798
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1445762478813483154": {
+      "wallet": 286,
+      "bank": 0,
+      "dailyAt": 1792223801226,
+      "weeklyAt": 0,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [
+        {
+          "text": "Daily reward: +286",
+          "at": 1792223801226
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1491448467728629830": {
+      "wallet": 1030,
+      "bank": 0,
+      "dailyAt": 1792224030800,
+      "weeklyAt": 0,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792304370749,
+      "robAt": 1792304385743,
+      "history": [
+        {
+          "text": "Robbed akshatkrofficial_47531: +463",
+          "at": 1792304385743
+        },
+        {
+          "text": "Crime success: +295",
+          "at": 1792304370749
+        },
+        {
+          "text": "Daily reward: +272",
+          "at": 1792224030800
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "_config": {
+      "workChannelId": "1551604178910978090",
+      "messageGoal": 50,
+      "shopPrices": {
+        "work_kit": 5000,
+        "lucky_charm": 2500,
+        "xp_scroll": 1500,
+        "premium": 50000,
+        "buddies": 5000,
+        "no_prefix_pass": 5000000
+      },
+      "maxGameBet": 100000,
+      "slotJackpotMultiplier": 10,
+      "rouletteGame": null,
+      "botChannelId": "",
+      "botChannelIds": [],
+      "bakeryPrices": {},
+      "bakeryMarket": {
+        "updatedAt": 1792396122141,
+        "values": {
+          "cookie": 50,
+          "chocolate": 100,
+          "cake": 250,
+          "brownie": 120,
+          "pastries": 80,
+          "puffs": 40,
+          "sweet_rolls": 70,
+          "donuts": 60
+        }
+      },
+      "pendingTrades": {}
+    },
+    "1470861747890946048": {
+      "wallet": 134,
+      "bank": 241,
+      "dailyAt": 1792245623311,
+      "weeklyAt": 0,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 1792245725505,
+      "robAt": 1792245763174,
+      "history": [
+        {
+          "text": "Robbery failed: -159",
+          "at": 1792245763174
+        },
+        {
+          "text": "Withdraw: 100",
+          "at": 1792245755197
+        },
+        {
+          "text": "Crime success: +193",
+          "at": 1792245725505
+        },
+        {
+          "text": "Deposit: 341",
+          "at": 1792245692761
+        },
+        {
+          "text": "Daily reward: +341",
+          "at": 1792245623486
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": {
+        "job": "Yapper",
+        "goalMinutes": 15,
+        "progressMs": 0,
+        "startedAt": 1792245714445
+      },
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1520018217396076674": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "423480005738364928": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1495341896380190870": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1332613770593177611": {
+      "wallet": 286,
+      "bank": 0,
+      "dailyAt": 1792320504263,
+      "weeklyAt": 0,
+      "streak": 1,
+      "lastDailyDate": "2026-10-18",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [
+        {
+          "text": "Daily reward: +286",
+          "at": 1792320504264
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1489903628503351457": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    }
+  },
+  "1550077284055121961": {
+    "1514280996068134912": {
+      "wallet": 35,
+      "bank": 2558,
+      "dailyAt": 1792229660644,
+      "weeklyAt": 1792229881140,
+      "streak": 1,
+      "lastDailyDate": "2026-10-17",
+      "job": "Messages Grinder",
+      "jobChangedAt": 1792229772843,
+      "workAt": 0,
+      "crimeAt": 1792229677541,
+      "robAt": 0,
+      "history": [
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792406552029
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792406522654
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792406516671
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792406429291
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792406272122
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792406269065
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792320530740
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792320523127
+        },
+        {
+          "text": "Robbed by ibn_swaleh: -1",
+          "at": 1792313432119
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792313336453
+        },
+        {
+          "text": "Deposit: 1887",
+          "at": 1792229895948
+        },
+        {
+          "text": "Weekly reward: +1883",
+          "at": 1792229881140
+        },
+        {
+          "text": "Messages Grinder message: +4",
+          "at": 1792229847668
+        },
+        {
+          "text": "Deposit: 371",
+          "at": 1792229733706
+        },
+        {
+          "text": "Crime success: +371",
+          "at": 1792229677541
+        },
+        {
+          "text": "Deposit: 300",
+          "at": 1792229673076
+        },
+        {
+          "text": "Daily reward: +300",
+          "at": 1792229660644
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": {
+        "job": "Messages Grinder",
+        "channelId": "1559604288211255326",
+        "goalMessages": 30,
+        "messageCount": 10,
+        "startedAt": 1792229834405
+      },
+      "lastWorkMessageId": "1561691011028353035",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": true
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "_config": {
+      "workChannelId": "1559604288211255326",
+      "messageGoal": 30,
+      "shopPrices": {
+        "work_kit": 5000,
+        "lucky_charm": 2500,
+        "xp_scroll": 1500,
+        "premium": 10000,
+        "buddies": 5000,
+        "no_prefix_pass": 5000000
+      },
+      "maxGameBet": 100000,
+      "slotJackpotMultiplier": 10,
+      "rouletteGame": null,
+      "botChannelId": "",
+      "botChannelIds": [],
+      "bakeryPrices": {},
+      "bakeryMarket": {
+        "updatedAt": 1792396122141,
+        "values": {
+          "cookie": 50,
+          "chocolate": 100,
+          "cake": 250,
+          "brownie": 120,
+          "pastries": 80,
+          "puffs": 40,
+          "sweet_rolls": 70,
+          "donuts": 60
+        }
+      },
+      "pendingTrades": {}
+    },
+    "1528066196572868679": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1483059307355308113": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1549814401597579350": {
+      "wallet": 50000,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +50000 Chocochips",
+          "at": 1792313479554
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1506609790326145156": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1500100361636155503": {
+      "wallet": 30001,
+      "bank": 20000,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 1792313432119,
+      "history": [
+        {
+          "text": "Deposit: 20000",
+          "at": 1792313582330
+        },
+        {
+          "text": "Owner grant from akshatkrofficial_47531: +50000 Chocochips",
+          "at": 1792313468723
+        },
+        {
+          "text": "Robbed akshatkrofficial_47531: +1",
+          "at": 1792313432119
+        }
+      ],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1549351208391803025": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1495341896380190870": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1089244731013345300": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      },
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      }
+    },
+    "1561684368949510176": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      },
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      }
+    },
+    "1371794316774608949": {
+      "wallet": 0,
+      "bank": 0,
+      "dailyAt": 0,
+      "weeklyAt": 0,
+      "streak": 0,
+      "lastDailyDate": "",
+      "job": "Yapper",
+      "jobChangedAt": 0,
+      "workAt": 0,
+      "crimeAt": 0,
+      "robAt": 0,
+      "history": [],
+      "xp": 0,
+      "voiceMinuteProgressMs": 0,
+      "activeWorkTask": null,
+      "lastWorkMessageId": "",
+      "workBonusRemainder": 0,
+      "workKitOwned": false,
+      "workKitActive": false,
+      "inventory": {
+        "work_kit": [],
+        "lucky_charm": [],
+        "xp_scroll": 0,
+        "premium": false,
+        "buddies": false,
+        "no_prefix_pass": false
+      },
+      "activeMineGame": null,
+      "shopSession": "",
+      "bakeryInventory": {},
+      "bakerySession": "",
+      "browniePet": {
+        "name": "Brownie",
+        "level": 1,
+        "xp": 0,
+        "happiness": 70,
+        "hunger": 70,
+        "evolution": "Baby Brownie",
+        "lastFedAt": 0
+      },
+      "gameCooldowns": {
+        "cfAt": 0,
+        "slotAt": 0,
+        "mineAt": 0,
+        "rouletteAt": 0
+      }
+    }
+  }
+}
