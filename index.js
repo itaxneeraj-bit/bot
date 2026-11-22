@@ -620,18 +620,19 @@ function guildSettings(guildId) {
 }
 
 const BANK_INTEREST_INTERVAL_MS = 3 * 24 * 60 * 60 * 1000;
-const SHARE_MARKET_INTERVAL_MS = 60 * 60 * 1000;
+const SHARE_MARKET_INTERVAL_MS = 2 * 60 * 60 * 1000; // every 2 hours
 
 function updateShareMarket(guildId, now = Date.now()) {
   const market = guildSettings(guildId).shareMarket;
   const steps = Math.min(72, Math.floor((now - market.updatedAt) / SHARE_MARKET_INTERVAL_MS));
   if (steps <= 0) return false;
   for (let i = 0; i < steps; i++) {
-    // Deliberately loss-heavy: 65% loss, 10% flat, 25% gain.
+    // Market odds: 55% loss, 10% no change, 35% gain.
+    // Movement: gain up to +7%, loss up to −12%.
     const roll = crypto.randomInt(0, 100);
     let change = 0;
-    if (roll < 65) change = -crypto.randomInt(1, 11);
-    else if (roll >= 75) change = crypto.randomInt(1, 6);
+    if (roll < 55) change = -crypto.randomInt(1, 13); // −1% to −12%
+    else if (roll >= 65) change = crypto.randomInt(1, 8); // +1% to +7%
     market.index = Math.max(1, Math.round(market.index * (100 + change) / 100));
     market.lastChange = change;
     market.history.push(market.index);
@@ -662,7 +663,8 @@ function settleInvestments(guildId, userId, now = Date.now()) {
   const matured = a.fixedDeposits.filter(fd => fd.maturesAt <= now);
   if (matured.length) {
     for (const fd of matured) {
-      const interest = Math.floor(fd.amount * 0.01 * fd.days);
+      // 1% interest every 2 days
+      const interest = Math.floor(fd.amount * 0.01 * Math.floor(fd.days / 2));
       const payout = fd.amount + interest;
       a.bank += payout;
       a.bankInterestAt = now;
@@ -691,12 +693,45 @@ function investmentOverviewEmbed(guildId, userId) {
   const { a } = settleInvestments(guildId, userId);
   const market = guildSettings(guildId).shareMarket;
   const shareValue = Math.floor(a.sharesUnits * market.index / 1000);
-  const deposits = a.fixedDeposits.length ? a.fixedDeposits.map((fd, i) => `**FD ${i + 1}:** ${chips(fd.amount)} · ${fd.days} days · matures <t:${Math.floor(fd.maturesAt / 1000)}:R>`).join('\n') : 'No active fixed deposits.';
-  const bar = market.history.slice(-12).map(v => v >= market.index ? '▂' : '▆').join('');
-  return new EmbedBuilder().setColor(0x4B2418).setTitle('📈 Brownie Capital — Investment Desk')
-    .setDescription(`**🏦 Bank**\nBalance: **${chips(a.bank)} Chocochips**\nInterest: **0.25% every 3 days**\n\n**🔒 Fixed Deposits**\n${deposits}\nRate: **1% simple interest per day** · Term: **3–30 days**\n\n**📊 Share Market**\nIndex: **${market.index.toLocaleString('en-US')}** · Last move: **${market.lastChange > 0 ? '+' : ''}${market.lastChange}%**\n${bar}\nYour shares: **${a.sharesUnits.toFixed(4)} units**\nCurrent value: **${chips(shareValue)} Chocochips**`)
-    .addFields({name:'Commands', value:'`*fd <amount> <days>` · `*fdstatus`\n`*market` · `*invest <amount>` · `*sellshares <amount|all>` · `*portfolio`'} )
-    .setFooter({text:'Share prices update hourly • Losses are more likely than gains • Virtual game currency only'});
+  const deposits = a.fixedDeposits.length
+    ? a.fixedDeposits.map((fd, i) => {
+        const periods = Math.floor(fd.days / 2);
+        const expected = Math.floor(fd.amount * 0.01 * periods);
+        return `**FD #${i + 1}**\n└ ${chips(fd.amount)}  •  ${fd.days}d  •  matures <t:${Math.floor(fd.maturesAt / 1000)}:R>\n└ Expected payout: **${chips(fd.amount + expected)}**`;
+      }).join('\n\n')
+    : '*No active fixed deposits.*';
+  const history = market.history.slice(-12);
+  const bar = history.map((v, idx) => {
+    if (idx === history.length - 1) return '◆';
+    return v >= (history[idx + 1] || v) ? '▁' : '▃';
+  }).join('');
+  const moveEmoji = market.lastChange > 0 ? '📈' : market.lastChange < 0 ? '📉' : '➖';
+  const moveText = market.lastChange > 0 ? `+${market.lastChange}%` : `${market.lastChange}%`;
+  return new EmbedBuilder()
+    .setColor(0x5C2E1F)
+    .setAuthor({ name: 'Brownie Capital' })
+    .setTitle('📈  INVESTMENT DESK')
+    .setDescription(
+      `╔════════════════════════════════╗\n` +
+      `║   **Your Brownie Capital Hub**   ║\n` +
+      `╚════════════════════════════════╝\n\n` +
+      `**🏦  Bank Account**\n` +
+      `Balance **${chips(a.bank)}** Chocochips\n` +
+      `Interest **0.25%** every **3 days**\n\n` +
+      `**🔒  Fixed Deposits**\n` +
+      `${deposits}\n` +
+      `Rate **1% every 2 days**  •  Term **3–30 days**\n\n` +
+      `**📊  Share Market**\n` +
+      `Index **${market.index.toLocaleString('en-US')}**  ${moveEmoji} **${moveText}**\n` +
+      `\`${bar}\`\n` +
+      `Your units **${a.sharesUnits.toFixed(4)}**\n` +
+      `Current value **${chips(shareValue)}** Chocochips`
+    )
+    .addFields(
+      { name: '⚡ Quick Commands', value: '`*fd <amt> <days>`  •  `*fdstatus`\n`*market`  •  `*invest <amt>`  •  `*sellshares <amt|all>`\n`*portfolio`', inline: false }
+    )
+    .setFooter({ text: 'Market updates every 2 hours  •  Losses more likely  •  Virtual currency only' })
+    .setTimestamp();
 }
 
 function accountEntries(guildId) {
@@ -836,10 +871,12 @@ function shopEmbed(guildId, userId) {
     return `**${item.name} — ${chips(settings.shopPrices[itemId])}**\n${item.description}\n_${status}_`;
   });
   return new EmbedBuilder()
-    .setColor(0x4B2418)
-    .setTitle("🍫 BROWNIE BOT  •  PREMIUM SHOP")
-    .setFooter({text:"Brownie Bot • Spend your Chocochips wisely"})
-    .setDescription(`${lines.join("\n\n")}\n\nUse a button to buy, or run \`${PREFIX}buy <item>\`. Item names: ${Object.keys(SHOP_ITEMS).join(", ")}.`);
+    .setColor(0x5C2E1F)
+    .setAuthor({ name: 'Brownie Bot' })
+    .setTitle('🍫  PREMIUM SHOP')
+    .setDescription(`${lines.join("\n\n")}\n\nUse a button to buy, or run \`${PREFIX}buy <item>\`.\nItem names: ${Object.keys(SHOP_ITEMS).join(", ")}.`)
+    .setFooter({ text: 'Spend your Chocochips wisely  •  Brownie Bot' })
+    .setTimestamp();
 }
 
 function shopComponents(userId, sessionId) {
@@ -905,7 +942,13 @@ function bakeryShopEmbed(guildId, userId) {
     const owned = Number(a.bakeryInventory[id] || 0);
     return `${item.emoji} **${item.name}** — ${Number.isSafeInteger(price) ? `${chips(price)} Chocochips` : '🔒 Price not set — unavailable'}\n   Market value: **${chips(settings.bakeryMarket.values[id])}** · Owned: **${owned}**`;
   });
-  return new EmbedBuilder().setColor(0x713B52).setTitle('🍰 BROWNIE BAKERY  •  SWEET COLLECTION').setDescription(`${lines.join('\n\n')}\n\nSelect an item below to purchase one. Items without an Administrator-set price are locked.`).setFooter({ text: 'Prices are permanent once set • *value shows changing market values' });
+  return new EmbedBuilder()
+    .setColor(0x7B3F5E)
+    .setAuthor({ name: 'Brownie Bakery' })
+    .setTitle('🍰  SWEET COLLECTION')
+    .setDescription(`${lines.join('\n\n')}\n\nSelect an item below to purchase one.\nItems without an Administrator-set price are locked.`)
+    .setFooter({ text: 'Prices are permanent once set  •  *value shows live market values' })
+    .setTimestamp();
 }
 
 function bakeryShopPayload(guildId, userId, sessionId) {
@@ -926,7 +969,13 @@ function bakeryValuesEmbed(guildId) {
     const purchase = settings.bakeryPrices[id];
     return `${item.emoji} **${item.name}**\nPurchase price: ${Number.isSafeInteger(purchase) ? `${chips(purchase)} Chocochips` : 'Not set'}\nMarket value: **${chips(settings.bakeryMarket.values[id])} Chocochips**`;
   });
-  return new EmbedBuilder().setColor(0x713B52).setTitle('📊 BROWNIE BAKERY  •  MARKET VALUES').setDescription(lines.join('\n\n')).setFooter({ text: 'Market values update every 24 hours; purchase prices never change once set.' });
+  return new EmbedBuilder()
+    .setColor(0x7B3F5E)
+    .setAuthor({ name: 'Brownie Bakery' })
+    .setTitle('📊  MARKET VALUES')
+    .setDescription(lines.join('\n\n'))
+    .setFooter({ text: 'Market values update every 24 hours  •  Purchase prices never change once set' })
+    .setTimestamp();
 }
 
 function petEmbed(user, showcase = false) {
@@ -935,9 +984,21 @@ function petEmbed(user, showcase = false) {
   const xpNeeded = pet.level * 100;
   const progress = Math.max(0, Math.min(10, Math.floor((pet.xp / xpNeeded) * 10)));
   const xpBar = `${'🟪'.repeat(progress)}${'⬛'.repeat(10 - progress)}`;
-  return new EmbedBuilder().setColor(0x713B52).setTitle(`${showcase ? '🌟 PET SHOWCASE' : '🐾 BROWNIE PET'}  •  ${pet.name} — ${pet.evolution}`)
-    .setDescription(`${showcase ? `**${user.username || 'Player'}'s Brownie Pet**\n` : 'Your Brownie Pet is here to keep you company!\n'}\n**Level:** ${pet.level}\n**XP:** ${pet.xp}/${xpNeeded}\n${xpBar}\n**Happiness:** ${pet.happiness}/100 ${pet.happiness >= 70 ? '😄' : pet.happiness >= 35 ? '🙂' : '🥺'}\n**Hunger:** ${pet.hunger}/100 ${pet.hunger >= 70 ? '🍰' : pet.hunger >= 35 ? '🍪' : '🍽️'}\n**Evolution:** ${pet.evolution}\n\n${pet.hunger < 30 ? '🍪 Your pet is hungry — use `*feedpet`!' : pet.happiness < 30 ? '🥺 Your pet wants to play — use `*playpet`!' : '✨ Your pet looks happy to see you!'}`)
-    .setFooter({ text: 'Use *petname <name>, *feedpet, or *playpet • Progress is saved' });
+  return new EmbedBuilder()
+    .setColor(0x7B3F5E)
+    .setAuthor({ name: showcase ? 'Pet Showcase' : 'Your Brownie Pet' })
+    .setTitle(`${showcase ? '🌟' : '🐾'}  ${pet.name}  —  ${pet.evolution}`)
+    .setDescription(
+      `${showcase ? `**${user.username || 'Player'}'s companion**\n\n` : 'Your Brownie Pet is here to keep you company!\n\n'}` +
+      `**Level**  •  **${pet.level}**\n` +
+      `**XP**  •  ${pet.xp} / ${xpNeeded}\n` +
+      `${xpBar}\n\n` +
+      `**Happiness**  •  ${pet.happiness}/100  ${pet.happiness >= 70 ? '😄' : pet.happiness >= 35 ? '🙂' : '🥺'}\n` +
+      `**Hunger**  •  ${pet.hunger}/100  ${pet.hunger >= 70 ? '🍰' : pet.hunger >= 35 ? '🍪' : '🍽️'}\n\n` +
+      `${pet.hunger < 30 ? '🍪 *Your pet is hungry — use `*feedpet`!*' : pet.happiness < 30 ? '🥺 *Your pet wants to play — use `*playpet`!*' : '✨ *Your pet looks happy to see you!*'}`
+    )
+    .setFooter({ text: '*petname <name>  •  *feedpet  •  *playpet  •  Progress is saved' })
+    .setTimestamp();
 }
 
 const HELP_CATEGORIES = Object.freeze({
@@ -956,7 +1017,7 @@ const HELP_CATEGORIES = Object.freeze({
       "• Slash commands start with `/` — choose them from Discord's command menu.\n" +
       "• Replace words in `<angle brackets>` with your own value. Do not type the brackets.\n\n" +
       "**Explore a section**\n" +
-      "Use the buttons below to find earning, wallet, shop, games, trading and pet commands."
+      "Use the buttons below to find earning, wallet, investment, shop, games, trading and pet commands."
   },
   earn: {
     label: "Earn & Jobs",
@@ -992,14 +1053,7 @@ const HELP_CATEGORIES = Object.freeze({
       "`*balance @member` — view another member's balance.\n\n" +
       "**Move & send money**\n" +
       "`*deposit <amount|all>` — move Chocochips from wallet to bank.\n" +
-      "`*withdraw <amount|all>` — move Chocochips from bank to wallet.\n\n" +
-      "**Brownie Capital investments**\n" +
-      "`*investments` — open the investment dashboard.\n" +
-      "`*fd <amount> <days>` — lock bank Chocochips for 3–30 days at 1% simple interest/day.\n" +
-      "`*fdstatus` — check active deposits and maturity.\n" +
-      "`*market` — view hourly share market movement.\n" +
-      "`*invest <amount>` / `*sellshares <amount|all>` — buy or sell virtual shares.\n" +
-      "`*portfolio` — view your investment holdings.\n\n" +
+      "`*withdraw <amount|all>` — move Chocochips from bank to wallet.\n" +
       "`*pay @member <amount|all>` — send Chocochips to a member.\n\n" +
       "**Your records**\n" +
       "`*history` — view recent transactions.\n" +
@@ -1007,7 +1061,34 @@ const HELP_CATEGORIES = Object.freeze({
       "`*economy` — view server economy statistics.\n\n" +
       "**Owner tools**\n" +
       "`*givecash` / `*takecash` — owner-only wallet management.\n" +
-      "`*noprefix @member add|remove` — owner-only No Prefix Pass management."
+      "`*noprefix @member add|remove` — owner-only No Prefix Pass management.\n\n" +
+      "💡 For Fixed Deposits, Share Market and the full investment desk, open the **Investment** section."
+  },
+  investments: {
+    label: "Investment",
+    emoji: "📈",
+    description:
+      "## 📈 Brownie Capital\n" +
+      "Grow your Chocochips with the bank, Fixed Deposits and the simulated share market.\n\n" +
+      "**Investment Desk**\n" +
+      "`*portfolio` or `/portfolio` — open the full investment dashboard (bank, FDs, shares).\n" +
+      "`*investments` or `/investments` — same dashboard (alias).\n\n" +
+      "**Bank**\n" +
+      "Earn **0.25% interest every 3 days** on your bank balance. Interest is applied automatically while the bot is online.\n\n" +
+      "**Fixed Deposits (FD)**\n" +
+      "`*fd <amount> <days>` or `/fd amount:<amount> days:<3–30>` — lock bank Chocochips for **3–30 days**.\n" +
+      "Interest: **1% every 2 days**.\n" +
+      "`*fdstatus` or `/fdstatus` — view active deposits and expected maturity payouts.\n" +
+      "Principal is locked until maturity. Payout returns to your bank automatically.\n\n" +
+      "**Share Market**\n" +
+      "`*market` or `/market` — view the current index and latest movement.\n" +
+      "`*invest <amount>` or `/invest amount:<amount>` — buy virtual share units with wallet Chocochips.\n" +
+      "`*sellshares <amount|all>` or `/sellshares amount:<amount|all>` — sell shares for their current value.\n\n" +
+      "**Market rules**\n" +
+      "• Updates every **2 hours**\n" +
+      "• Movement: gain up to **+7%**, loss up to **−12%**\n" +
+      "• Odds: **55% loss** · **10% no change** · **35% gain**\n" +
+      "This is a simulated in-bot economy — not real stocks."
   },
   shop: {
     label: "Shop",
@@ -1109,15 +1190,18 @@ function helpPayload(userId, categoryId = "start") {
     rows.push(new ActionRowBuilder().addComponents(...buttons.slice(i, i + 5)));
   }
   const embed = new EmbedBuilder()
-    .setColor(0x4B2418)
-    .setTitle("🍫 BROWNIE BOT  |  HELP CENTRE")
+    .setColor(0x5C2E1F)
+    .setAuthor({ name: 'Brownie Bot' })
+    .setTitle('🍫  HELP CENTRE')
     .setDescription(
-      `*A simple guide to every feature and command.*\n\n` +
-      `**${category.emoji} ${category.label.toUpperCase()}**  ·  Section ${position.index}/${position.total}\n` +
+      `*Your complete guide to every feature and command.*\n\n` +
+      `**${category.emoji}  ${category.label.toUpperCase()}**\n` +
+      `Section **${position.index}** of **${position.total}**\n` +
       `${position.bar}\n\n` +
       `${category.description}`
     )
-    .setFooter({ text: "Choose a category button to turn the page • Commands use * or / as shown" });
+    .setFooter({ text: 'Tap a category button to switch pages  •  Commands use * or / as shown' })
+    .setTimestamp();
   return { embeds: [embed], components: rows };
 }
 
@@ -1125,15 +1209,15 @@ function helpTransitionPayload(userId, categoryId) {
   const category = HELP_CATEGORIES[categoryId] || HELP_CATEGORIES.start;
   const position = helpCategoryPosition(categoryId);
   const embed = new EmbedBuilder()
-    .setColor(0xA65E42)
-    .setTitle("📖 Turning the page…")
+    .setColor(0x8B5A2B)
+    .setAuthor({ name: 'Brownie Bot' })
+    .setTitle('📖  Turning the page…')
     .setDescription(
-      `🍫 **Brownie Bot Help Centre**\n\n` +
-      `Loading **${category.emoji} ${category.label}**…\n` +
+      `Loading **${category.emoji} ${category.label}**\n` +
       `${position.bar}\n\n` +
-      "*Getting your commands ready!*"
+      '*Getting your commands ready…*'
     )
-    .setFooter({ text: "Brownie Bot • Help Centre" });
+    .setFooter({ text: 'Brownie Bot  •  Help Centre' });
   return { embeds: [embed], components: [] };
 }
 
@@ -1515,10 +1599,25 @@ async function runCommand(
     case "balance": {
       const target = targetUser || user;
       const b = target.id === user.id ? a : settleInvestments(guildId, target.id, now).a;
-      return reply({ embeds: [new EmbedBuilder().setColor(0x4B2418).setTitle(`🍫 ${target.username}'s Brownie Wallet`)
-        .setDescription(`**👛 Wallet**\n${chips(b.wallet)} Chocochips\n\n**🏦 Bank**\n${chips(b.bank)} Chocochips\nInterest: 0.25% every 3 days\n\n**💼 Current Job**\n${b.job}`)
-        .addFields({name:'Fixed Deposits',value:String(b.fixedDeposits.length)},{name:'Share Holdings',value:`${b.sharesUnits.toFixed(4)} units`})
-        .setFooter({text:'Use *investments to open Brownie Capital'})] });
+      return reply({ embeds: [new EmbedBuilder()
+        .setColor(0x5C2E1F)
+        .setAuthor({ name: 'Brownie Wallet' })
+        .setTitle(`🍫  ${target.username}`)
+        .setDescription(
+          `**👛  Wallet**\n` +
+          `**${chips(b.wallet)}** Chocochips\n\n` +
+          `**🏦  Bank**\n` +
+          `**${chips(b.bank)}** Chocochips\n` +
+          `Interest  •  **0.25% every 3 days**\n\n` +
+          `**💼  Current Job**\n` +
+          `${b.job || 'None'}`
+        )
+        .addFields(
+          { name: '🔒 Fixed Deposits', value: String(b.fixedDeposits.length), inline: true },
+          { name: '📊 Share Units', value: b.sharesUnits.toFixed(4), inline: true }
+        )
+        .setFooter({ text: 'Use *portfolio to open Brownie Capital' })
+        .setTimestamp()] });
     }
 
     case "investments":
@@ -1536,23 +1635,65 @@ async function runCommand(
       a.bankInterestAt = now;
       a.fixedDeposits.push({ id: crypto.randomUUID(), amount: principal, days, createdAt: now, maturesAt });
       record(a, `FD opened: -${principal} for ${days} days`); save();
-      const interest = Math.floor(principal * 0.01 * days);
-      return reply({embeds:[new EmbedBuilder().setColor(0x4B2418).setTitle('🔒 Fixed Deposit Created')
-        .setDescription(`Principal: **${chips(principal)}**\nTerm: **${days} days**\nSimple interest: **1% per day**\nExpected interest: **${chips(interest)}**\nMaturity payout: **${chips(principal + interest)}**\nUnlocks: <t:${Math.floor(maturesAt/1000)}:F>\n\nYour bank funds are locked until maturity; early withdrawal is not available. The payout returns to your bank.`).setFooter({text:'Brownie Capital • FD'})]});
+      const interest = Math.floor(principal * 0.01 * Math.floor(days / 2));
+      return reply({embeds:[new EmbedBuilder()
+        .setColor(0x5C2E1F)
+        .setAuthor({ name: 'Brownie Capital' })
+        .setTitle('🔒  Fixed Deposit Opened')
+        .setDescription(
+          `**Principal locked**\n` +
+          `${chips(principal)} Chocochips\n\n` +
+          `**Term**  •  **${days} days**\n` +
+          `**Interest rate**  •  **1% every 2 days**\n` +
+          `**Expected interest**  •  **${chips(interest)}**\n` +
+          `**Maturity payout**  •  **${chips(principal + interest)}**\n\n` +
+          `Unlocks <t:${Math.floor(maturesAt/1000)}:F>\n` +
+          `*(${Math.floor(maturesAt/1000)} relative: <t:${Math.floor(maturesAt/1000)}:R>)*\n\n` +
+          `Funds stay locked until maturity. Early withdrawal is not available.\n` +
+          `Payout is automatically returned to your **bank**.`
+        )
+        .setFooter({ text: 'Brownie Capital  •  Fixed Deposit' })
+        .setTimestamp()]});
     }
 
     case "fdstatus": {
-      const lines = a.fixedDeposits.map((fd,i) => `**FD ${i+1}** · ${chips(fd.amount)} · ${fd.days} days · <t:${Math.floor(fd.maturesAt/1000)}:R>\nMaturity payout: **${chips(fd.amount + Math.floor(fd.amount * 0.01 * fd.days))}**`);
-      return reply({embeds:[new EmbedBuilder().setColor(0x4B2418).setTitle('🔐 Your Fixed Deposits').setDescription(lines.length ? lines.join('\n\n') : 'You have no active fixed deposits.').setFooter({text:'FDs cannot be withdrawn before their maturity time.'})]});
+      const lines = a.fixedDeposits.map((fd,i) => {
+        const expected = Math.floor(fd.amount * 0.01 * Math.floor(fd.days / 2));
+        return `**FD #${i + 1}**\n` +
+          `└ Amount: **${chips(fd.amount)}**  •  Term: **${fd.days} days**\n` +
+          `└ Matures: <t:${Math.floor(fd.maturesAt/1000)}:R>\n` +
+          `└ Expected payout: **${chips(fd.amount + expected)}**`;
+      });
+      return reply({embeds:[new EmbedBuilder()
+        .setColor(0x5C2E1F)
+        .setAuthor({ name: 'Brownie Capital' })
+        .setTitle('🔐  Your Fixed Deposits')
+        .setDescription(lines.length ? lines.join('\n\n') : '*You have no active fixed deposits.*\n\nOpen one with `*fd <amount> <days>` (3–30 days).')
+        .setFooter({ text: 'FDs cannot be withdrawn before maturity  •  1% interest every 2 days' })
+        .setTimestamp()]});
     }
 
     case "market": {
       updateShareMarket(guildId, now);
       const market = guildSettings(guildId).shareMarket;
       const movement = market.lastChange > 0 ? `+${market.lastChange}%` : `${market.lastChange}%`;
-      return reply({embeds:[new EmbedBuilder().setColor(0x4B2418).setTitle('📊 Brownie Share Exchange')
-        .setDescription(`**Market index:** ${market.index.toLocaleString('en-US')}\n**Last hourly movement:** ${movement}\n**Movement limits:** +5% maximum / −10% maximum\n**Market odds:** loss 65% · no change 10% · gain 25%\n\nInvest Chocochips with \`*invest <amount>\`. Sell holdings with \`*sellshares <amount|all>\`.`)
-        .setFooter({text:'Simulated market • Not real stocks or financial advice'})]});
+      const moveEmoji = market.lastChange > 0 ? '📈' : market.lastChange < 0 ? '📉' : '➖';
+      return reply({embeds:[new EmbedBuilder()
+        .setColor(0x5C2E1F)
+        .setAuthor({ name: 'Brownie Capital' })
+        .setTitle('📊  Brownie Share Exchange')
+        .setDescription(
+          `**Current Index**\n` +
+          `# **${market.index.toLocaleString('en-US')}**  ${moveEmoji} **${movement}**\n\n` +
+          `**Last movement**  •  every 2 hours\n` +
+          `**Limits**  •  gain up to **+7%**  /  loss up to **−12%**\n` +
+          `**Odds**  •  **55%** loss  ·  **10%** flat  ·  **35%** gain\n\n` +
+          `Buy shares with \`*invest <amount>\`\n` +
+          `Sell with \`*sellshares <amount|all>\`\n` +
+          `View holdings with \`*portfolio\``
+        )
+        .setFooter({ text: 'Simulated market  •  Not real stocks or financial advice' })
+        .setTimestamp()]});
     }
 
     case "invest": {
@@ -1563,7 +1704,19 @@ async function runCommand(
       const market = guildSettings(guildId).shareMarket;
       a.wallet -= principal; a.sharesUnits += principal * 1000 / market.index; a.sharesInvested += principal;
       record(a, `Bought shares: -${principal} at index ${market.index}`); save();
-      return reply(`📈 Investment placed! You bought **${(principal * 1000 / market.index).toFixed(4)} share units** at index **${market.index}**. Your investment can rise or fall; losses are more likely.`);
+      const units = (principal * 1000 / market.index).toFixed(4);
+      return reply({embeds:[new EmbedBuilder()
+        .setColor(0x5C2E1F)
+        .setAuthor({ name: 'Brownie Capital' })
+        .setTitle('📈  Shares Purchased')
+        .setDescription(
+          `You bought **${units}** share units\n` +
+          `at index **${market.index.toLocaleString('en-US')}**\n\n` +
+          `Cost: **${chips(principal)}** Chocochips\n\n` +
+          `*Prices can rise or fall. Losses are more likely than gains.*`
+        )
+        .setFooter({ text: 'Use *portfolio to view holdings  •  *sellshares to exit' })
+        .setTimestamp()]});
     }
 
     case "sellshares": {
@@ -1581,7 +1734,17 @@ async function runCommand(
       const costReduction = Math.min(a.sharesInvested, Math.floor(a.sharesInvested * unitsToSell / (a.sharesUnits + unitsToSell || 1)));
       a.sharesInvested = Math.max(0, a.sharesInvested - costReduction);
       record(a, `Sold shares: +${sellValue} at index ${market.index}`); save();
-      return reply(`💱 Shares sold for **${chips(sellValue)} Chocochips** at index **${market.index}**. Remaining shares: **${a.sharesUnits.toFixed(4)} units**.`);
+      return reply({embeds:[new EmbedBuilder()
+        .setColor(0x5C2E1F)
+        .setAuthor({ name: 'Brownie Capital' })
+        .setTitle('💱  Shares Sold')
+        .setDescription(
+          `Sold for **${chips(sellValue)}** Chocochips\n` +
+          `at index **${market.index.toLocaleString('en-US')}**\n\n` +
+          `Remaining units: **${a.sharesUnits.toFixed(4)}**`
+        )
+        .setFooter({ text: 'Use *portfolio to review your holdings' })
+        .setTimestamp()]});
     }
 
     case "daily": {
@@ -1991,9 +2154,16 @@ async function runCommand(
         new ButtonBuilder().setCustomId(`trade:${tradeId}:accept`).setLabel("Accept trade").setStyle(ButtonStyle.Success),
         new ButtonBuilder().setCustomId(`trade:${tradeId}:decline`).setLabel("Decline").setStyle(ButtonStyle.Danger)
       );
-      const embed = new EmbedBuilder().setColor(0x713B52).setTitle("🔄 Trade Offer")
-        .setDescription(`<@${user.id}> offers ${[itemId ? `**${itemQuantity} ${BAKERY_ITEMS[itemId].name}**` : "", offerAmount > 0 ? `**${chips(offerAmount)} Chocochips**` : ""].filter(Boolean).join(" and ") || "an empty offer"} to <@${targetUser.id}>.\n\nThe recipient may accept even if they offer nothing in return.`)
-        .setFooter({ text: "Offer expires after 10 minutes • Accept only if you agree" });
+      const embed = new EmbedBuilder()
+        .setColor(0x7B3F5E)
+        .setAuthor({ name: 'Brownie Trading' })
+        .setTitle('🔄  Trade Offer')
+        .setDescription(
+          `<@${user.id}> offers ${[itemId ? `**${itemQuantity} ${BAKERY_ITEMS[itemId].name}**` : "", offerAmount > 0 ? `**${chips(offerAmount)} Chocochips**` : ""].filter(Boolean).join(" and ") || "an empty offer"} to <@${targetUser.id}>.\n\n` +
+          `The recipient may accept even if they offer nothing in return.`
+        )
+        .setFooter({ text: 'Offer expires after 10 minutes  •  Accept only if you agree' })
+        .setTimestamp();
       return reply({ embeds: [embed], components: [row], allowedMentions: { users: [user.id, targetUser.id] } });
     }
     case "help":
@@ -3160,9 +3330,9 @@ client.on("messageCreate", async message => {
     }
     if (typeof text === "string") {
       const isError = /❌|🔒|not enough|must be|invalid|cannot|can't|does not|don't/i.test(text);
-      return message.reply({ embeds: [new EmbedBuilder().setColor(isError ? 0x8B3434 : 0x4B2418)
-        .setAuthor({name:'🍫 BROWNIE BOT', iconURL: client.user.displayAvatarURL()})
-        .setDescription(text.slice(0, 4000)).setFooter({text:'Brownie Bot • Chocochips Economy'})] });
+      return message.reply({ embeds: [new EmbedBuilder().setColor(isError ? 0x9B2C2C : 0x5C2E1F)
+        .setAuthor({name:'🍫 Brownie Bot', iconURL: client.user.displayAvatarURL()})
+        .setDescription(text.slice(0, 4000)).setFooter({text:'Brownie Bot  •  Chocochips Economy'}).setTimestamp()] });
     }
     return message.reply(text);
   };
@@ -3345,9 +3515,9 @@ client.on("interactionCreate", async interaction => {
         }
         if (typeof text === "string") {
           const isError = /❌|🔒|not enough|must be|invalid|cannot|can't|does not|don't/i.test(text);
-          return interaction.editReply({ embeds: [new EmbedBuilder().setColor(isError ? 0x8B3434 : 0x4B2418)
-            .setAuthor({name:'🍫 BROWNIE BOT', iconURL: client.user.displayAvatarURL()})
-            .setDescription(text.slice(0, 4000)).setFooter({text:'Brownie Bot • Chocochips Economy'})] });
+          return interaction.editReply({ embeds: [new EmbedBuilder().setColor(isError ? 0x9B2C2C : 0x5C2E1F)
+            .setAuthor({name:'🍫 Brownie Bot', iconURL: client.user.displayAvatarURL()})
+            .setDescription(text.slice(0, 4000)).setFooter({text:'Brownie Bot  •  Chocochips Economy'}).setTimestamp()] });
         }
         return interaction.editReply(text);
       },
